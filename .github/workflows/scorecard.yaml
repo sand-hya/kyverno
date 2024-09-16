@@ -5,11 +5,11 @@ name: Scorecards supply-chain security
 permissions: {}
 
 on:
-  schedule:
-    - cron: '30 1 * * 6'
+  # schedule:
+  #   - cron: '30 1 * * 6'
   push:
     branches:
-      - main
+      - v1.12.5_release
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
